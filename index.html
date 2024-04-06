@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github</title>
+</head>
+<style>
+ main{
+        text-align: center;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 20%;
+        justify-content: center;
+        margin: auto;
+        gap:10px ;
+    }
+   
+    @media screen and (min-width: 320px) and (max-width: 500px) {
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 20%;
+            justify-content: center;
+            margin: auto;
+            gap: 5px;
+        }
+    }
+ 
+    
+
+    .child{
+        box-shadow: 1px 1px 5px rgb(189, 185, 185);
+        height: 530px;
+        width: 410px;
+    }
+    .child > img{
+        width: 410px;
+        height: 380px;
+    
+    }
+    .child > p + img{
+        width: 150px;
+        height: 60px;
+        margin-top:-10px;
+    }
+     p{
+        margin: 5px 0; 
+        font-size: 30px;
+    }
+    h5{
+        margin: 5px 0;
+        font-size: 30px;
+
+    }
+   
+</style>
+<body>
+   <main>
+    <div class="container">
+        <div class="child">
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg" alt="image">
+         <h5>Vijay Shekhar Sharma</h5>
+         <p>Founder & CEO</p>
+         <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg" alt="">
+
+        </div>
+        <div class="child">
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png" alt="image">
+            <h5>Kunal Shah</h5>
+            <p>Founder</p>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png" alt="logo image">
+        </div>
+        <div class="child">
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" alt="">
+            <h5>Amrish Rau</h5>
+            <p>CEO</p>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png" alt="">
+        </div>
+        <div class="child">
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg" alt="">
+            <h5>Sampad Swain</h5>
+            <p>Co-Founder & CEO</p>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png" alt="">
+        </div>
+    </div>
+   </main> 
+</body>
+</html>
